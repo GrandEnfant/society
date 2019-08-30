@@ -1,0 +1,26 @@
+Header {
+    width: 2500px;
+    height: 84px;
+    background-color: brown;
+
+}
+.mainContainer {
+    width: 2050px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+
+
+}
+.left_container {
+    width: 550px;
+    height: 100%;
+
+}
+
+.miniProfile {
+    width: 350px;
+    height: 100%;
+
+}
