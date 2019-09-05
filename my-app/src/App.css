@@ -1,0 +1,43 @@
+Header {
+  width: 2500px;
+  height: 84px;
+  background-color: brown;
+
+}
+.mainContainer {
+  width: 2050px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+.UserMiniInfo {
+  width: 350px;
+  background-color: brown;
+}
+
+.UserMiniInfo {
+  width: 350px;
+  height: 500px;
+  border: 1px solid gray;
+}
+.photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 80px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.shortInfo {
+  margin: 0 auto;
+  color: aliceblue;
+}
+.navlink {
+  width: 350px;
+  height: 500px;
+  border: 1px solid olivedrab;
+}
+.news {
+  display: flex;
+
+}
