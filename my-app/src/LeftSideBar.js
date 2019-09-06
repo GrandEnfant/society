@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavLink from "./NavLink"
+import NavLinks from "./NavLinks"
 
 
 function LeftSideBar() {
@@ -10,7 +10,7 @@ function LeftSideBar() {
             <div className="photo"></div>
             <div className="shortInfo"></div>
             </div>
-            <NavLink></NavLink>
+            <NavLinks></NavLinks>
 
         </div>
     );
