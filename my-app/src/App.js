@@ -6,7 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import YourProfile from "./MainYourProfile";
 import News from "./News";
 import Registration from "./Registration";
-import Messages from "./Messages"
+import Messages from "./Dialogs";
 
 
 function App() {
