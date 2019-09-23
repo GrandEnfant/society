@@ -1,16 +1,30 @@
-Header {
-  width: 2500px;
-  height: 84px;
+.header {
+  width: 1800px;
+  height: 140px;
   background-color: brown;
-  display: flex;
-  justify-content: space-between;
+
 
 }
-.mainContainer {
-  width: 2050px;
-  margin: 0 auto;
+.header-flex {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.just-flex {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 100%;
+  align-items: center;
+
+}
+.mainBox {
+  width: 1400px;
+}
+.mainContainer {
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .UserMiniInfo {
@@ -18,16 +32,37 @@ Header {
   height: 500px;
   background-color: brown;
 }
-.centralContainer{
-
-}
 
 .photo {
-  height: 150px;
-  width: 150px;
-  border-radius: 80px;
+  height: 200px;
+  width: 200px;
+  border-radius: 120px;
   border: 1px solid black;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: url(img/VILenin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -41px
+}
+.logo {
+  background-image: url(img/logo.svg);
+  width: 272px;
+  height: 255px;
+  background-size: 209px;
+  background-repeat: no-repeat;
+  position: -webkit-sticky;
+  position: sticky;
+  background-position-y: 56px;
+  margin-left: 30px;
+}
+.titleContent {
+  text-align: center;
+  font-size: 32px;
+}
+.eachElementOfMessage {
+  border: 1px solid darkred;
 }
 .shortInfo {
   margin: 0 auto;
@@ -55,10 +90,8 @@ Header {
 }
 
 .dialogs {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
   height: 400px;
+  padding-left: 40px;
 }
 
 .users {
@@ -66,6 +99,23 @@ Header {
   height: 50px;
 }
 .messages {
-  width: 200px;
   height: 50px;
+}
+.userPhoto {
+  height: 50px;
+  width: 50px;
+}
+
+.eachPhoto {
+  height: inherit;
+  width: inherit;
+}
+.newMessage{
+  display: flex;
+  justify-content: center;
+  margin-top: 39px;
+}
+
+.newMessage_place {
+  width: inherit;
 }
