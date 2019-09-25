@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from "./Header";
+import Header from "./Components/Header";
 import LeftSideBar from "./LeftSideBar";
 import { BrowserRouter, Route } from 'react-router-dom';
-import YourProfile from "./MainYourProfile";
-import News from "./News";
-import Registration from "./Registration";
-import Dialogs from "./Dialogs";
+import YourProfile from "./Components/Profile/ProfileInfo/MainYourProfile";
+import News from "./Components/News";
+import Registration from "./Components/Registration";
+import Dialog from "./Components/Dialogs/Dialog";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/MainYourProfile" component={YourProfile}/>
           <Route path="/News" component={News}/>
           <Route path="/Registration" component={Registration}/>
-          <Route path="/Messages" component={Dialogs}/>
+          <Route path="/Dialogs" component={Dialog}/>
            </div></div>
         </BrowserRouter>
 
