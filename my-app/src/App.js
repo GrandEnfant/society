@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import LeftSideBar from "./LeftSideBar";
 import { BrowserRouter, Route } from 'react-router-dom';
 import YourProfile from "./Components/Profile/ProfileInfo/MainYourProfile";
 import News from "./Components/News";
-import Registration from "./Components/Registration";
+import Registration from "./Components/Registration/Registration";
 import Dialog from "./Components/Dialogs/Dialog";
 
 
-function App() {
+function App(props) {
+
   return (
         <BrowserRouter>
         <Header> </Header>
@@ -18,10 +19,10 @@ function App() {
        <div className="mainContainer just-flex">
         <LeftSideBar>
         </LeftSideBar>
-          <Route path="/MainYourProfile" component={YourProfile}/>
-          <Route path="/News" component={News}/>
-          <Route path="/Registration" component={Registration}/>
-          <Route path="/Dialogs" component={Dialog}/>
+          <Route path="/MainYourProfile" render = {() => <YourProfile/>}/>
+          <Route path="/News" render = {() => <News/>}/>
+          <Route path="/Registration" render = {() => <Registration/>}/>
+          <Route path="/Dialogs" render = {() => <Dialog messages ={props.messages} users = {props.users}/>}/>
            </div></div>
         </BrowserRouter>
 

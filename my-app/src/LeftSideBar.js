@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavLinks from "./Components/NavLinks"
+import NavLinks from "./Components/NavLink/NavLinks"
 
 
 function LeftSideBar() {
