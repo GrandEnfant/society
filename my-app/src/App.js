@@ -9,6 +9,8 @@ import Registration from "./Components/Registration/Registration";
 import Dialog from "./Components/Dialogs/Dialog";
 
 
+
+
 function App(props) {
 
   return (
@@ -22,7 +24,7 @@ function App(props) {
           <Route path="/MainYourProfile" render = {() => <YourProfile/>}/>
           <Route path="/News" render = {() => <News/>}/>
           <Route path="/Registration" render = {() => <Registration/>}/>
-          <Route path="/Dialogs" render = {() => <Dialog messages ={props.messages} users = {props.users}/>}/>
+          <Route path="/Dialogs" render = {() => <Dialog messages ={props.State.messages} users = {props.State.users}/>}/>
            </div></div>
         </BrowserRouter>
 

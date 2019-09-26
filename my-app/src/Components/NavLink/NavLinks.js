@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import { NavLink } from "react-router-dom"
-
+import { NavLink } from "react-router-dom";
+import Friends from '../Profile/Friends';
 
 function NavLinks() {
     return (
@@ -12,6 +12,7 @@ function NavLinks() {
                 <li><NavLink to="/Rules">Правила</NavLink></li>
                 <li><NavLink to="/Dialogs">Сообщения</NavLink></li>
             </ul>
+
         </div>
 
     );

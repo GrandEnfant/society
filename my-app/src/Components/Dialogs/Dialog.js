@@ -6,7 +6,6 @@ import UserMessage from './Messages/Message';
 
 
 const Dialog = (props) => {
-
     let userElements = props.users.map(dialog => <Users name={dialog.name} key={dialog.id} photo={dialog.photo}/>);
     let messageElements = props.messages.map(message => <UserMessage text={message.text} key={message.id}/>);
 
