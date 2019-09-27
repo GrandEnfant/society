@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import FriendsList from './FriendsList';
 
 const Friends = (props) => {
@@ -8,10 +8,11 @@ const Friends = (props) => {
     return (
         <div className={"friendList"}>
             <h1>Friend List Here</h1>
-            {friendItem}
+            <div className={"friendsList"}>
+                {friendItem}
+                </div>
         </div>
 )
-
 }
 
 

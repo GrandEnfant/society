@@ -1,9 +1,6 @@
 import React from 'react';
-import './App.css';
-import NavLinks from "./Components/NavLink/NavLinks";
-import Friends from './Components/Profile/Friends'
-
-
+import '../App.css';
+import NavLinks from "./NavLink/NavLinks";
 
 function LeftSideBar(props) {
     return (
@@ -13,8 +10,6 @@ function LeftSideBar(props) {
             <div className="shortInfo"></div>
             </div>
             <NavLinks ></NavLinks>
-            <Friends friends={props.State.friends}></Friends>
-
         </div>
     );
 }
