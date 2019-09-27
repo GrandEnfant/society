@@ -20,7 +20,6 @@ const State =
         {id: 1, name: "Victor Reznov", photo: "img/Reznov.png"},
 
     ],
-
 }
 let addElement = (text) => {
     let NewMessage = {

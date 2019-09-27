@@ -7,8 +7,9 @@ function NewMessage() {
     let NewMessageElement = React.createRef();
 
     let addMessage = () => {
-        let textInArea = NewMessageElement.current.value;
+       let textInArea = NewMessageElement.current.value;
        addElement(textInArea);
+       NewMessageElement.current.value = '';
     };
     return (
         <div className={"newMessage"}>
