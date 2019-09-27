@@ -1,3 +1,4 @@
+import {rerenderTree} from "../render";
 
 const State =
 {
@@ -19,5 +20,18 @@ const State =
         {id: 1, name: "Victor Reznov", photo: "img/Reznov.png"},
 
     ],
+
 }
+let addElement = (text) => {
+    let NewMessage = {
+        id: 4,
+        text: text,
+    }
+    State.messages.push(NewMessage);
+    console.log(State.messages);
+    rerenderTree(State)
+};
+
+
 export default State;
+export {addElement};

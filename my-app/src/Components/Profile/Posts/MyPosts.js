@@ -14,6 +14,7 @@ const Posts = () => {
     let postElements = posts.map(post => <UserPosts text={post.text} key={post.id}/>);
     return (
         <div>
+            <NewPost> </NewPost>
             <div className={"post"}>
                 {postElements}
             </div>

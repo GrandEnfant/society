@@ -1,8 +1,8 @@
 import React from 'react';
 import './../../App.css';
-import NewPost from '../Profile/Posts/NewPost';
 import Users from './Users/User';
 import UserMessage from './Messages/Message';
+import NewMessage from './Messages/NewMessage'
 
 
 const Dialog = (props) => {
@@ -12,7 +12,8 @@ const Dialog = (props) => {
     return (
         <div>
             <div className={"titleContent"}> Сообщения</div>
-            <NewPost> </NewPost>
+            <NewMessage addElement={props.addElement}></NewMessage>
+
             <div className={"dialogs just-flex"}>
                 <div className={"usersBlock"}> {userElements} </div>
                 <div className={"messagesBox"}> {messageElements} </div>
@@ -20,6 +21,8 @@ const Dialog = (props) => {
         </div>
     )
 }
+
+
 
 
 export default Dialog;

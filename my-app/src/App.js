@@ -8,6 +8,7 @@ import News from "./Components/News";
 import Registration from "./Components/Registration/Registration";
 import Dialog from "./Components/Dialogs/Dialog";
 import Friends from "./Components/Profile/Friends/Friends";
+// import {addElement} from './redux/state'
 
 
 function App(props) {
@@ -15,20 +16,16 @@ function App(props) {
   return (
         <BrowserRouter>
         <Header> </Header>
-
        <div className="mainBox just-flex">
        <div className="mainContainer just-flex">
-
         <LeftSideBar>
         </LeftSideBar>
-
           <Route path="/MainYourProfile" render = {() => <YourProfile/>}/>
           <Route path="/News" render = {() => <News/>}/>
           <Route path="/Registration" render = {() => <Registration/>}/>
-          <Route path="/Dialogs" render = {() => <Dialog messages ={props.State.messages} users = {props.State.users}/>}/>
+          <Route path="/Dialogs" render = {() => <Dialog messages ={props.State.messages} users = {props.State.users} addElement ={props.addElement}/>}/>
           <Route path="/Friends" render ={() => <Friends friends = {props.State.friends}/>}/>
            </div></div>
-
         </BrowserRouter>
 
   );
