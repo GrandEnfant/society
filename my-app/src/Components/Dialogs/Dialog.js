@@ -2,7 +2,8 @@ import React from 'react';
 import './../../App.css';
 import Users from './Users/User';
 import UserMessage from './Messages/Message';
-import NewMessage from './Messages/NewMessage'
+import NewMessage from './Messages/NewMessage';
+import store from '../../redux/state';
 
 
 const Dialog = (props) => {
@@ -12,7 +13,7 @@ const Dialog = (props) => {
     return (
         <div>
             <div className={"titleContent"}> Сообщения</div>
-            <NewMessage addElement={props.addElement}></NewMessage>
+            <NewMessage addElement={store.addElement}></NewMessage>
 
             <div className={"dialogs just-flex"}>
                 <div className={"usersBlock"}> {userElements} </div>

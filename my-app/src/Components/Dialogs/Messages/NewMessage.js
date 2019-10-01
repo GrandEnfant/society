@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../App.css';
-import {addElement} from '../../../redux/state'
+import store from '../../../redux/state';
+
 
 
 function NewMessage() {
@@ -8,7 +9,8 @@ function NewMessage() {
 
     let addMessage = () => {
        let textInArea = NewMessageElement.current.value;
-       addElement(textInArea);
+       store.addElement(textInArea);
+       debugger;
        NewMessageElement.current.value = '';
     };
     return (

@@ -8,7 +8,7 @@ import News from "./Components/News";
 import Registration from "./Components/Registration/Registration";
 import Dialog from "./Components/Dialogs/Dialog";
 import Friends from "./Components/Profile/Friends/Friends";
-// import {addElement} from './redux/state'
+import store from './redux/state'
 
 
 function App(props) {
@@ -23,8 +23,8 @@ function App(props) {
           <Route path="/MainYourProfile" render = {() => <YourProfile/>}/>
           <Route path="/News" render = {() => <News/>}/>
           <Route path="/Registration" render = {() => <Registration/>}/>
-          <Route path="/Dialogs" render = {() => <Dialog messages ={props.State.messages} users = {props.State.users} addElement ={props.addElement}/>}/>
-          <Route path="/Friends" render ={() => <Friends friends = {props.State.friends}/>}/>
+          <Route path="/Dialogs" render = {() => <Dialog messages ={store.getState().messages} users = {store.getState().users} addElement ={store.addElement}/>}/>
+          <Route path="/Friends" render ={() => <Friends friends = {store.getState().friends}/>}/>
            </div></div>
         </BrowserRouter>
 
