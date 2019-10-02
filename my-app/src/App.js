@@ -23,7 +23,7 @@ function App(props) {
           <Route path="/MainYourProfile" render = {() => <YourProfile/>}/>
           <Route path="/News" render = {() => <News/>}/>
           <Route path="/Registration" render = {() => <Registration/>}/>
-          <Route path="/Dialogs" render = {() => <Dialog messages ={store.getState().messages} users = {store.getState().users} addElement ={store.addElement}/>}/>
+          <Route path="/Dialogs" render = {() => <Dialog messages ={store.getState().messages} users = {store.getState().users} dispatch ={store.dispatch}/>}/>
           <Route path="/Friends" render ={() => <Friends friends = {store.getState().friends}/>}/>
            </div></div>
         </BrowserRouter>

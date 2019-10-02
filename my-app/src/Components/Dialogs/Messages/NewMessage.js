@@ -9,10 +9,12 @@ function NewMessage() {
 
     let addMessage = () => {
        let textInArea = NewMessageElement.current.value;
-       store.addElement(textInArea);
+       store.dispatch({type: "ADD_ELEMENT", textMessage: textInArea});
        debugger;
        NewMessageElement.current.value = '';
+        debugger;
     };
+
     return (
         <div className={"newMessage"}>
             <textarea ref={NewMessageElement} className={"newMessage_place"}></textarea>

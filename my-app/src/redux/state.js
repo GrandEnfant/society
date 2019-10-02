@@ -1,4 +1,4 @@
-import {rerenderTree} from "../render";
+
 
 let store = {
     _state: {
@@ -22,17 +22,45 @@ let store = {
         ],
     },
     addElement(text) {
-        let NewMessage = {
-            id: 4,
-            text: text,
-        }
-        this.getState().messages.push(NewMessage);
-        console.log(NewMessage, this.getState().messages);
-        rerenderTree();
+
+    },
+    callSubscriber() {
+        debugger;
+        console.log("rerenderThree");
     },
     getState() {
+        debugger;
        return this._state;
     },
+    subscribe(observer) {
+        debugger;
+        this.callSubscriber = observer;
+    },
+
+    // update(){
+    //   this.callSubscriber();
+    //     debugger;
+    // },
+    dispatch(action){
+        debugger;
+        if((action.type === "ADD_ELEMENT") && (action.textMessage)) {
+            let NewMessage = {
+                id: 4,
+                text: action.textMessage,
+            }
+            debugger;
+            this.getState().messages.push(NewMessage);
+            debugger;
+            console.log(NewMessage, this.getState().messages);
+            this.callSubscriber();
+            debugger;
+
+           // this.callSubscriber(this._state);
+        }
+        else if(!action.textMessage) {
+            console.log("textMessage is empty");
+        }
+    }
 };
 
 
