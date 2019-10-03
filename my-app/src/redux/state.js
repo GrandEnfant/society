@@ -1,5 +1,5 @@
 
-
+const ADD_ELEMENT = 'ADD_ELEMENT';
 let store = {
     _state: {
         users: [
@@ -25,16 +25,20 @@ let store = {
 
     },
     callSubscriber() {
-        debugger;
         console.log("rerenderThree");
     },
     getState() {
-        debugger;
        return this._state;
     },
     subscribe(observer) {
-        debugger;
         this.callSubscriber = observer;
+    },
+    addElementActionCreator(textInArea) {
+        return {
+            type: ADD_ELEMENT,
+            textMessage: textInArea,
+
+        }
     },
 
     // update(){
@@ -42,18 +46,14 @@ let store = {
     //     debugger;
     // },
     dispatch(action){
-        debugger;
-        if((action.type === "ADD_ELEMENT") && (action.textMessage)) {
+        if((action.type === ADD_ELEMENT) && (action.textMessage)) {
             let NewMessage = {
                 id: 4,
                 text: action.textMessage,
             }
-            debugger;
             this.getState().messages.push(NewMessage);
-            debugger;
             console.log(NewMessage, this.getState().messages);
             this.callSubscriber();
-            debugger;
 
            // this.callSubscriber(this._state);
         }
@@ -66,4 +66,4 @@ let store = {
 
 
 export default store;
-// export {addElement};
+

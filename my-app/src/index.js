@@ -6,8 +6,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-
-
 let rerenderTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
@@ -17,7 +15,6 @@ let rerenderTree = (state) => {
         </BrowserRouter>,
         document.getElementById('root'));
 };
-debugger;
 rerenderTree(store.getState);
 store.subscribe(rerenderTree);
 
