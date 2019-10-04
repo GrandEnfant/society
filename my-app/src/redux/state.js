@@ -34,21 +34,21 @@ let store = {
     },
         posts: {
             addPostActionCreator(PostText) {
-                debugger;
                 return {
                     type: ADD_POST,
                     textPost: PostText,
                 }
             },
-        }
+        },
+        dialogs: {
+            addMessageActionCreator(textInArea) {
+                return {
+                    type: ADD_MESSAGE,
+                    textMessage: textInArea,
+                }
+            },
 
-    },
-    dialogs: {
-        addMessageActionCreator(textInArea) {
-            return {
-                type: ADD_MESSAGE,
-                textMessage: textInArea,
-            }
+
         },
 
     },
@@ -63,7 +63,6 @@ let store = {
         return this._state;
     },
     dispatch(action){
-        debugger;
         if((action.type === ADD_MESSAGE) && (action.textMessage)) {
             let NewMessage = {
                 id: 4,
@@ -76,16 +75,13 @@ let store = {
            // this.callSubscriber(this._state);
         }
         else if((action.type === ADD_POST) && (action.textPost)) {
-            debugger;
             console.log("Post added");
             let NewPostArr = {
                 id: 4,
                 text: action.textPost,
             };
             this.getState().userProfile.posts.push(NewPostArr);
-            debugger;
             console.log(NewPostArr, this.getState().userProfile.posts);
-            debugger;
             this.callSubscriber();
         }
     }

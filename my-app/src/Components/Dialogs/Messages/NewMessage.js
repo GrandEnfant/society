@@ -8,7 +8,7 @@ function NewMessage() {
     let NewMessageElement = React.createRef();
     let addMessage = () => {
        let textInArea = NewMessageElement.current.value;
-       let action = store.addMessageActionCreator(textInArea);
+       let action = store.getState().dialogs.addMessageActionCreator(textInArea);
        store.dispatch(action);
        NewMessageElement.current.value = '';
     };
