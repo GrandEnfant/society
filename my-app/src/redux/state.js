@@ -72,7 +72,7 @@ let store = {
             console.log(NewMessage, this.getState().messages);
             this.callSubscriber();
 
-           // this.callSubscriber(this._state);
+            // this.callSubscriber(this._state);
         }
         else if((action.type === ADD_POST) && (action.textPost)) {
             console.log("Post added");

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4161e094-8d0f-4788-b1fc-26202b0f4b6f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Profile/Friends/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Profile/Friends/Friends.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/redux/DialogsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/redux/ProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/redux/state.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +22,8 @@
       <file leaf-file-name="state.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/redux/state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="185">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#45#252#0" />
                 <element signature="e#272#580#0" />
@@ -29,6 +32,24 @@
                 <element signature="e#1275#1491#0" />
                 <element signature="e#1485#1662#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileReducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/redux/ProfileReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DialogsReducer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/redux/DialogsReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,35 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dialog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/Components/Dialogs/Dialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="15" column="72" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Friends.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Friends.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/Components/Profile/Friends/Friends.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -205,8 +202,10 @@
         <option value="$PROJECT_DIR$/my-app/src/Components/Profile/Posts/RenderPosts.js" />
         <option value="$PROJECT_DIR$/my-app/src/Components/Profile/Posts/NewPost.js" />
         <option value="$PROJECT_DIR$/my-app/src/Components/Dialogs/Messages/NewMessage.js" />
-        <option value="$PROJECT_DIR$/my-app/src/redux/state.js" />
         <option value="$PROJECT_DIR$/my-app/src/Components/Profile/Friends/Friends.js" />
+        <option value="$PROJECT_DIR$/my-app/src/redux/state.js" />
+        <option value="$PROJECT_DIR$/my-app/src/redux/ProfileReducer.js" />
+        <option value="$PROJECT_DIR$/my-app/src/redux/DialogsReducer.js" />
       </list>
     </option>
   </component>
@@ -373,7 +372,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268342000" />
+    <option name="totallyTimeSpent" value="271485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +387,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18282989" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18282989" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.3291592" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -396,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.44007155" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.44007155" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -450,23 +449,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="9" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/Components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/font-awesome-4.7.0/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -789,21 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/redux/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding>
-            <element signature="e#45#252#0" />
-            <element signature="e#272#580#0" />
-            <element signature="e#689#828#0" />
-            <element signature="e#845#1206#0" />
-            <element signature="e#1275#1491#0" />
-            <element signature="e#1485#1662#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/Components/Profile/Posts/NewPost.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -848,6 +815,35 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/redux/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#45#252#0" />
+            <element signature="e#272#580#0" />
+            <element signature="e#689#828#0" />
+            <element signature="e#845#1206#0" />
+            <element signature="e#1275#1491#0" />
+            <element signature="e#1485#1662#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/redux/ProfileReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/redux/DialogsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
