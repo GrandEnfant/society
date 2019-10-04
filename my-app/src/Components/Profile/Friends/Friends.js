@@ -4,7 +4,7 @@ import FriendsList from './FriendsList';
 import store from "../../../redux/state";
 
 const Friends = (props) => {
-    let friendItem = store.userProfile.friends.map(friend => <FriendsList name={friend.name} key={friend.id}/>);
+    let friendItem = store.getState().userProfile.friends.map(friend => <FriendsList name={friend.name} key={friend.id}/>);
 
     return (
         <div className={"friendList"}>
