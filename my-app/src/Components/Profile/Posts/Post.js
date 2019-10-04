@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../../App.css';
 
-const UserMessage = (props) => {
+
+const UserPost= (props) => {
     return (
         <div className={"messages eachElementOfMessage"}>
             {props.text}
@@ -10,4 +11,4 @@ const UserMessage = (props) => {
 }
 
 
-export default UserMessage;
+export default UserPost;

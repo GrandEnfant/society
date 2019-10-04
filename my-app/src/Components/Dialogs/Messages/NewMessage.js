@@ -6,16 +6,9 @@ import store from '../../../redux/state';
 
 function NewMessage() {
     let NewMessageElement = React.createRef();
-
-    // let addElementActionCreator = (textInArea) => {
-    //     return {
-    //         type: 'ADD_ELEMENT',
-    //         textMessage: textInArea,
-    //     }
-    // }
     let addMessage = () => {
        let textInArea = NewMessageElement.current.value;
-       let action = store.addElementActionCreator(textInArea);
+       let action = store.addMessageActionCreator(textInArea);
        store.dispatch(action);
        NewMessageElement.current.value = '';
     };

@@ -13,7 +13,7 @@ const Dialog = (props) => {
     return (
         <div>
             <div className={"titleContent"}> Сообщения</div>
-            <NewMessage dispatch={store.dispatch({type: "ADD_ELEMENT"})}></NewMessage>
+            <NewMessage dispatch={store.dispatch({type: "ADD_MESSAGE"})}></NewMessage>
 
             <div className={"dialogs just-flex"}>
                 <div className={"usersBlock"}> {userElements} </div>

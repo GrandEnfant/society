@@ -1,11 +1,18 @@
 import React from 'react';
 import '../../../App.css';
+import store from "../../../redux/state";
 
 function NewPost() {
     let NewPostElement = React.createRef();
     let addPost = () => {
-        let text = NewPostElement.current.value;
-        alert(text);
+        debugger;
+        let PostText = NewPostElement.current.value;
+        debugger;
+        let action = store.getState().posts.addPostActionCreator(PostText);
+        debugger;
+        store.dispatch(action);
+        debugger;
+        NewPostElement.current.value = '';
     };
    return (
         <div className={"newMessage"}>

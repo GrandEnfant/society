@@ -1,5 +1,6 @@
 
-const ADD_ELEMENT = 'ADD_ELEMENT';
+const ADD_MESSAGE = 'ADD_MESSAGE';
+const ADD_POST = 'ADD_POST';
 let store = {
     _state: {
         users: [
@@ -15,38 +16,55 @@ let store = {
                 text: "Freedom in capitalist society always remains about the same as it was in ancient Greek republics: Freedom for slave owners."
             }
         ],
-        friends: [
-            {id: 0, name: "Ivan", photo: "img/Ivan.jpg"},
-            {id: 1, name: "Victor Reznov", photo: "img/Reznov.png"},
+        userProfile: {
+            friends: [
+                {id: 0, name: "Ivan", photo: "img/Ivan.jpg"},
+                {id: 1, name: "Victor Reznov", photo: "img/Reznov.png"},
 
-        ],
+            ],
+            posts: [
+                {id: 0, text: "It's my first post. Once on Tuesday I went home", likesCount: 12},
+                {id: 1, text: "It's my second post. I reading a book when mother came", likesCount: 12},
+                {
+                    id: 2,
+                    text: "It's my third post. I say her: 'My bus leaves at 7 pm tomorrow'", likesCount: 15
+                }
+            ],
+
     },
-    addElement(text) {
+        posts: {
+            addPostActionCreator(PostText) {
+                debugger;
+                return {
+                    type: ADD_POST,
+                    textPost: PostText,
+                }
+            },
+        }
+
+    },
+    dialogs: {
+        addMessageActionCreator(textInArea) {
+            return {
+                type: ADD_MESSAGE,
+                textMessage: textInArea,
+            }
+        },
 
     },
     callSubscriber() {
         console.log("rerenderThree");
     },
-    getState() {
-       return this._state;
-    },
+
     subscribe(observer) {
         this.callSubscriber = observer;
     },
-    addElementActionCreator(textInArea) {
-        return {
-            type: ADD_ELEMENT,
-            textMessage: textInArea,
-
-        }
+    getState() {
+        return this._state;
     },
-
-    // update(){
-    //   this.callSubscriber();
-    //     debugger;
-    // },
     dispatch(action){
-        if((action.type === ADD_ELEMENT) && (action.textMessage)) {
+        debugger;
+        if((action.type === ADD_MESSAGE) && (action.textMessage)) {
             let NewMessage = {
                 id: 4,
                 text: action.textMessage,
@@ -57,8 +75,18 @@ let store = {
 
            // this.callSubscriber(this._state);
         }
-        else if(!action.textMessage) {
-            console.log("textMessage is empty");
+        else if((action.type === ADD_POST) && (action.textPost)) {
+            debugger;
+            console.log("Post added");
+            let NewPostArr = {
+                id: 4,
+                text: action.textPost,
+            };
+            this.getState().userProfile.posts.push(NewPostArr);
+            debugger;
+            console.log(NewPostArr, this.getState().userProfile.posts);
+            debugger;
+            this.callSubscriber();
         }
     }
 };
